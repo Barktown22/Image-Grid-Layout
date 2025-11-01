@@ -1,0 +1,23 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 33vh);
+  gap: 10px;
+}
+.image {
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+.col1,
+.col2,
+.col3 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+@media (width <= 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
